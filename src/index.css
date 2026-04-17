@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --color-magenta: #FF00FF;
+  --color-soft-yellow: #FFF44F;
+  --color-warm-gray: #DEDBD3;
+  --color-ink: #1A1A1A;
+  --color-bg: #E5E5E1;
+}
+
+@layer base {
+  * {
+    cursor: crosshair;
+  }
+  body {
+    @apply bg-bg text-ink antialiased font-sans selection:bg-magenta selection:text-white;
+  }
+}
+
+.text-magenta {
+  color: #FF00FF;
+}
+
+
